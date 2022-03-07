@@ -1,0 +1,489 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic';
+    src: url(../webfonts/ITCAvantGardeStd-Bk.ttf);
+}
+
+@font-face {
+    font-family: 'AvantGardeBold';
+    src: url(../webfonts/Avant-Garde-Gothic-ITC-Bold.otf);
+}
+
+@font-face {
+    font-family: 'ManusTrial';
+    src: url(../webfonts/Manus-Trial.ttf);
+}
+
+body{
+    font-family: 'ITC Avant Garde Gothic';
+    color: #024E5C;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'AvantGardeBold';
+    font-size: 22px;
+    line-height: 26px;
+}
+
+a:hover{
+    color: #FFF;
+}
+
+.font-script{
+    font-family: 'ManusTrial';
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+b, .bold{
+    font-family: 'AvantGardeBold';
+}
+
+h1{
+    font-family: 'AvantGardeBold'; 
+    font-size: 64px;
+    line-height: 77px;
+}
+
+h2{
+    font-size: 36px;
+    line-height: 43px;
+}
+
+h3{
+    font-size: 31px;
+    line-height: 37px;
+    font-family: 'AvantGardeBold';
+}
+
+h3.color {
+    color: #FF9710;
+    text-align: center;
+}
+
+div .pack{
+    font-family: 'AvantGardeBold';
+    font-size: 24px;
+    line-height: 29px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* inicio header */
+#header{
+    position: relative;
+}
+
+.header-top{
+    margin: 38px 70px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    min-height: 460px;
+}
+
+.header-top::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 60px solid #FFF;
+    border-left: 100vw solid transparent;
+}
+
+.header-top .container{
+    padding-top: 245px;
+}
+
+.header-top h2, .header-top h1{
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.79);
+}
+
+.logo-olivos{
+    position: absolute;
+    bottom: -38px;
+    right: 0;
+    left: 0;
+    margin: auto
+}
+
+/* inicio section - home */
+.home{
+    padding-top: 71px;
+    text-align: center;
+}
+
+.home > div{
+    max-width: 895px;
+    margin: 0 auto;
+}
+
+.home .font-script{
+    font-size: 48px;
+    line-height: 96px;
+    margin-bottom: 0;
+}
+
+/* inicio articlulos */
+.article{
+    margin-top: 110px;
+}
+
+.article > div{
+    position: relative;
+}
+
+.herb{
+    opacity: 0.1;
+    width: 300px;
+    position: absolute;
+    top: -45px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.img-btn{
+    position: relative;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.img-btn .btn-basic{
+    position: absolute;
+    bottom: 67px;
+    background-color: #00a8a2;
+    left: 0;
+    right: 0;
+    width: 358px;
+    margin: auto;
+    padding: 15px;
+}
+
+span.line {
+    background-color: rgba(0, 78, 92, 0.4);
+    width: 100%;
+    display: block;
+    height: 1px;
+    max-width: 885px;
+    margin: auto;
+}
+
+/* Inici promos */
+.promotion{
+    background-color: #004E5C;
+    background-image: url(../img/Recurso.png);
+    color: #FFF;
+    margin-top: 55px;
+}
+
+.promotion h2{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.promotion .promos{
+    padding-bottom: 60px;
+}
+
+.promos figure{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.promos figure img{
+    width: 100%;
+}
+
+.promos figure .price{
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    background-color: #FF9710;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+.promos figure .price span{
+    font-size: 18px;
+    font-family: 'AvantGardeBold';
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+figure .pack{
+    position: absolute;
+    padding: 35px;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 90px;
+}
+
+.btn-promo{
+    border: 3px solid #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 30px;
+    width: 202px;
+    padding: 7px;
+}
+
+figure figcaption span{
+    display: block;
+}
+
+/* inicio bookings */
+.bookings .logo{
+    padding: 30px 0 16px;
+}
+
+.bookings .col-md-6 {
+    border-right: 1px solid rgba(0, 78, 92, 0.6);
+}
+    
+.bookings .col-md-6:last-child {
+    border-right: 0;
+
+}
+
+.actividad{
+    padding: 0 100px;
+}
+
+
+.actividad .logo{
+    height: 120px;
+}
+
+.actividad .img-btn img{
+    max-width: 380px;
+}
+
+/* inicio guide */
+.guide > div{
+    text-align: center;
+    margin-top: 85px;
+}
+
+.guide .travel{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.travel .title{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.travel h3{
+    margin-bottom: 20px;
+}
+
+#btn-guide{
+    bottom: 20px;
+}
+
+.guide img{
+    margin-top: 30px;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* inicio footer */
+.bg-footer{
+    background-image: url(../img/footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.bg-footer > div {
+    background-image: url(../img/OndasFooter.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.logos-colaboradores{
+    margin: 25px 0 46px;
+}
+
+.bg-footer .logos-colaboradores img{
+    width: 127px;
+    margin: 0 27px;
+}
+
+.texto{
+    position: relative;
+}
+
+.texto .marketing{
+    position: absolute;
+    color: #FBFBFB;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.6;
+    top: 0;
+    right: -12px;
+}
+
+.texto p{
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.texto .font-script{
+    font-size: 52px;
+    line-height: 104px;
+}
+
+.menus-footer{
+    font-size: 13px;
+    line-height: 16px;
+    color: #FBFBFB;
+    text-align: left;
+}
+
+.menus-footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.oculto{
+    visibility: hidden;
+}
+
+.menus-footer .col-md-6 {
+    border-right: 0.64px solid #FBFBFB;
+  }
+   .menus-footer .col-md-6:last-child {
+    border-right: 0;
+  }
+  
+.menus-footer .left-menu{
+    margin-left: auto;
+    margin-right: 125px;
+    width: 190px;
+}
+
+.menus-footer .right-menu{
+    margin-right: auto;
+    margin-left: 125px;
+    width: 190px;
+}
+
+.social-media{
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.social-media img{
+    padding: 0 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { 
+    h1{
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .header-top{
+        margin: 0;
+    }
+    
+    .header-top h2{
+        padding: 0 100px;
+    }
+
+    .home > div{
+        padding: 0 100px;
+    }
+    
+    #article2 {
+        flex-wrap: wrap-reverse;
+    }
+
+    .articles .line{
+        width: 0;
+    }
+
+    .slick-dots{
+        bottom: 37px;
+    }
+
+    .bookings .col-md-6 {
+        border-right: 0;
+    }
+
+    .actividad{
+        padding: 0;
+    }
+
+    .guide > div {
+        padding: 0;
+    }
+
+    .guide .travel{
+        margin: 0 75px;
+    }
+
+    .guide img {
+        clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .bg-footer .logos-colaboradores img{
+        margin: 0 10px;
+    }
+
+    .bg-footer{
+        background-position: center;
+        background-position-y: 245px;
+    }
+
+    .bg-footer > div{
+        max-width: 640px;
+    }
+
+    .texto span{
+        display: block;
+    }
+
+    .menus-footer .left-menu {
+        margin: 0 auto;
+        width: 190px;
+    }
+
+    .menus-footer .right-menu {
+        margin: 0 auto;
+        width: 190px;
+    }
+
+    .menus-footer .col-md-6 {
+        border-right: 0;
+    }
+
+}
