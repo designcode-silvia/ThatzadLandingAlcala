@@ -78,30 +78,48 @@ p{
 /* inicio header */
 #header{
     position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .header-top{
     margin: 38px 70px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
     color: #FFF;
     text-align: center;
     position: relative;
     min-height: 460px;
 }
 
-.header-top::before {
+.carousel.slide::before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     border-bottom: 60px solid #FFF;
     border-left: 100vw solid transparent;
+    z-index: 1;
+}
+
+.header-top .slide{
+    height: 415px;
+    width: 100%;
+    background-color: #004E5C;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.header-top .slide.slide-1{
+    background-image: url(../img/navBanner1.png);
+}
+
+.header-top .slide.slide-2{
+    background-image: url(../img/navBanner2.png);
 }
 
 .header-top .container{
-    padding-top: 245px;
+    margin-top: -215px;
+    position: relative;
 }
 
 .header-top h2, .header-top h1{
@@ -109,16 +127,17 @@ p{
 }
 
 .logo-olivos{
-    position: absolute;
-    bottom: -38px;
+    bottom: 10px;
     right: 0;
     left: 0;
-    margin: auto
+    position: relative;
+    margin: auto;
+    z-index: 2;
 }
 
 /* inicio section - home */
 .home{
-    padding-top: 71px;
+    padding-top: 15px;
     text-align: center;
 }
 
@@ -167,6 +186,11 @@ p{
     width: 358px;
     margin: auto;
     padding: 15px;
+    transition: all 0.3s;
+}
+
+.img-btn .btn-basic:hover{
+    background-color: #01817d;
 }
 
 span.line {
@@ -243,6 +267,15 @@ figure .pack{
     bottom: 30px;
     width: 202px;
     padding: 7px;
+    transition: all 0.5s;
+}
+
+.btn-promo:hover{
+    background-color: #FFF;
+}
+
+.btn-promo:hover a{
+    color: #004E5C;
 }
 
 figure figcaption span{
@@ -254,11 +287,11 @@ figure figcaption span{
     padding: 30px 0 16px;
 }
 
-.bookings .col-md-6 {
+.bookings .col-xl-6 {
     border-right: 1px solid rgba(0, 78, 92, 0.6);
 }
     
-.bookings .col-md-6:last-child {
+.bookings .col-xl-6:last-child {
     border-right: 0;
 
 }
@@ -435,10 +468,6 @@ figure figcaption span{
         bottom: 37px;
     }
 
-    .bookings .col-md-6 {
-        border-right: 0;
-    }
-
     .actividad{
         padding: 0;
     }
@@ -486,4 +515,10 @@ figure figcaption span{
         border-right: 0;
     }
 
+}
+
+@media (max-width: 1200px) {
+    .bookings .col-xl-6 {
+        border-right: 0;
+    }
 }
